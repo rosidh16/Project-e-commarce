@@ -1,0 +1,33 @@
+*{
+  margin: 0;
+}
+.header{
+  width: 100%;
+  height: 87px;
+  background-color: #213366;
+}
+.header h2{
+  padding-right: 40px;
+  text-align: left;
+  font-size: 21px;
+  color: beige;
+  font-family: "Bodoni Bd BT";
+}
+.header h1{
+  padding-left: 1230px;
+  text-align: right;
+  font-size: 13px;
+  color: beige;
+  font-family: Arial;
+}
+.header input[type=text]{
+  float: left;
+  margin-top: -22px;
+  margin-left: 120px;
+  padding-left: 340px;
+  width: 516px;
+  height: 27px;
+}
+.badan{
+  background-color: gainsboro;
+}
