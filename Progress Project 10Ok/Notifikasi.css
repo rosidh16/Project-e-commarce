@@ -1,0 +1,108 @@
+*{
+  margin: 0;
+}
+.header{
+  height: 87px;
+  background-color: #213366;
+  color: beige;
+}
+.header h1{
+  padding-top: 23px;
+  margin-left: 45px;
+  text-align: justify;
+  font-size: 35px;
+  color: beige;
+  font-family: "Bodoni Bd BT";
+}
+.header h2{
+  margin-top: -30px;
+  margin-left: 1200px;
+  text-align: justify;
+  font-size: 13px;
+  color: beige;
+  font-family: Arial;
+}
+.header h3{
+  margin-top: 6px;
+  margin-left: 1270px;
+  text-align: justify;
+  font-size: 13px;
+  color: beige;
+  font-family: Arial;
+}
+.gambarnotifikasi{
+  margin-left: 1178px;
+  margin-top: -40px;
+}
+.gambarorang{
+  margin-left: 1280px;
+  margin-top: -45px;
+}
+.profiltasta h4{
+  margin-top: 30px;
+  margin-left: 50px;
+  font-size: 13px;
+  color: black;
+  font-family: Arial;
+}
+.profiltasta h5{
+  margin-left: 70px;
+  margin-top: -20px;
+  font-size: 10px;
+  color: grey;
+  font-family: Arial;
+}
+.menu h6{
+  margin-left: 50px;
+  margin-top: 25px;
+  font-size: 13px;
+  color: black;
+  font-family: Arial;
+}
+.menu h7{
+  margin-left: 50px;
+  font-size: 13px;
+  color: black;
+  font-family: Arial;
+}
+.menu h8{
+  margin-left: 50px;
+  margin-top: 250px;
+  font-size: 13px;
+  color: black;
+  font-family: Arial;
+}
+.gambarorang2{
+  margin-top: -25px;
+  margin-left: 8px;
+}
+.gambarubahprofil{
+  margin-top: -13px;
+  margin-left: 50px;
+}
+.gambarorangpoloshitam{
+  margin-top: -20px;
+  margin-left: 20px;
+}
+.gambarpesananhitam{
+  margin-top: -40px;
+  margin-left: 20px;
+}
+.gambarnotifikasihitam{
+  margin-top: -20px;
+  margin-left: 20px;
+}
+.cari input[type=text]{
+  margin-top: 200px;
+  margin-left: -1px;
+  width: 640px;
+  height: 25px;
+}
+.gambarpesananwarna{
+  margin-top: 100px;
+}
+.hurufbelumadapesanan{
+  font-family: Arial;
+  font-size: 13px;
+  word-spacing: 0px;
+}

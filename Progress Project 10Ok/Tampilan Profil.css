@@ -1,0 +1,92 @@
+*{
+  margin: 0;
+}
+.header{
+  height: 87px;
+  background-color: #213366;
+  color: beige;
+}
+.header h1{
+  padding-top: 23px;
+  margin-left: 45px;
+  text-align: justify;
+  font-size: 35px;
+  color: beige;
+  font-family: "Bodoni Bd BT";
+}
+.fieldset1{
+  background-color: #bababa;
+  text-align: center;
+}
+.fieldset1 h2{
+  font-family: Arial;
+  font-size: 13px;
+}
+.fieldset2 h3{
+  font-family: Arial;
+  font-size: 13px;
+}
+.fieldset2 h4{
+  font-family: Arial;
+  font-size: 10px;
+  color: #888888;
+}
+.fieldset3 h5{
+  font-family: Arial;
+  font-size: 13px;
+}
+.fieldset3 h6 {
+  font-family: Arial;
+  font-size: 10px;
+  color: #888888;
+}
+.fieldset4 h7{
+  font-family: Arial;
+  font-size: 13px;
+}
+.fieldset4 h8{
+  font-family: Arial;
+  font-size: 10px;
+  color: #888888;
+}
+.fieldset4 h9{
+  font-family: Arial;
+  font-size: 10px;
+  color: #888888;
+}
+.fieldset5 h10{
+  font-family: Arial;
+  font-size: 13px;
+}
+.fieldset5 h11{
+  font-family: Arial;
+  font-size: 10px;
+  color: #888888;
+}
+.fieldset6 h12{
+  font-family: Arial;
+  font-size: 13px;
+}
+.fieldset6 h13{
+  font-family: Arial;
+  font-size: 10px;
+  color: #888888;
+}
+.fieldset7 h14{
+  font-family: Arial;
+  font-size: 13px;
+}
+.fieldset7 h15{
+  font-family: Arial;
+  font-size: 10px;
+  color: #888888;
+}
+.fieldset8 h16{
+  font-family: Arial;
+  font-size: 13px;
+}
+.fieldset8 h17{
+  font-family: Arial;
+  font-size: 10px;
+  color: #888888;
+}
