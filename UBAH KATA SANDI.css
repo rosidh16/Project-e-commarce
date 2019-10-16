@@ -1,0 +1,19 @@
+*{
+  margin: 0;
+}
+.header{
+  height: 87px;
+  background-color: #213366;
+  color: beige;
+}
+.header h1{
+  padding-top: 23px;
+  margin-left: 45px;
+  text-align: justify;
+  font-size: 35px;
+  color: beige;
+  font-family: "Bodoni Bd BT";
+}
+.panah{
+  margin-left: 20px;
+}
