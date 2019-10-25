@@ -4,96 +4,75 @@
 body{
   background-color: lightgrey;
 }
+input[type=text]:focus{
+  width: 100%;
+}
+.menudropdown li a{
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+  margin-left: -35px;
+  margin-top: 20px;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+.dropdown:hover .isidropdown{
+  display: block;
+}
+isidropdown a:hover{
+  color: #fff !important;
+}
+.isidropdown{
+  position: absolute;
+  display: none;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  background-color: #f9f9f9;
+}
+.isidropdown a{
+  color: #3c3c3c !important;
+}
+.isidropdown a:hover{
+  color: #232323; !important;
+}
 .header{
   height: 87px;
   background-color: #213366;
   color: beige;
 }
 .header h1{
-  padding-top: 23px;
-  margin-left: 45px;
+  padding-top: 18px;
+  margin-left: 5px;
   text-align: justify;
   font-size: 35px;
   color: beige;
   font-family: "Bodoni Bd BT";
 }
-.header h2{
-  margin-top: -30px;
-  margin-left: 1200px;
-  text-align: justify;
-  font-size: 13px;
-  color: beige;
-  font-family: Arial;
-}
-.header h3{
-  margin-top: 6px;
-  margin-left: 1270px;
-  text-align: justify;
-  font-size: 13px;
-  color: beige;
-  font-family: Arial;
-}
-.gambarnotifikasi{
-  margin-left: 1178px;
-  margin-top: -40px;
-}
-.gambarorang{
-  margin-left: 1280px;
-  margin-top: -45px;
-}
-.profiltasta h4{
-  margin-top: 50px;
-  margin-left: 80px;
-  font-size: 16px;
+.profiltasta h2{
+  margin-top: 20%;
+  margin-left: 30%;
+  font-size: 100%;
   color: black;
   font-family: Arial;
 }
-.profiltasta h5{
-  margin-left: 100px;
-  margin-top: -30px;
-  font-size: 12px;
+.profiltasta h3{
+  margin-left: 40%;
+  margin-top: -6%;
+  font-size: 75%;
   color: grey;
   font-family: Arial;
 }
-.menu h6{
-  margin-left: 130px;
-  margin-top: 30px;
-  font-size: 13px;
-  color: black;
-  font-family: Arial;
-}
-.menu h7{
-  margin-left: 130px;
-  font-size: 13px;
-  color: black;
-  font-family: Arial;
-}
-.menu h8{
-  margin-left: 130px;
-  margin-top: 250px;
-  font-size: 13px;
-  color: black;
-  font-family: Arial;
+.gambarubahprofil{
+  margin-top: -6%;
+  margin-left: 30%;
 }
 .gambarorang2{
-  margin-top: -40px;
-  margin-left: 8px;
-}
-.gambarubahprofil{
-  margin-top: -15px;
-  margin-left: 80px;
-}
-.gambarorangpoloshitam{
-  margin-top: -50px;
-  margin-left: 100px;
-}
-.gambarpesananhitam{
-  margin-top: -72px;
-  margin-left: 100px;
-}
-.gambarnotifikasihitam{
-  margin-top: -20px;
-  margin-left: 100px;
+  margin-top: -10%;
+  margin-left: 10%;
 }
 .badan{
   margin-right: 1100px;
@@ -104,28 +83,29 @@ body{
   text-align: center;
   margin-top: -155px;
   overflow: hidden;
-  word-spacing: 90px;
-}
-.content-menu{
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color: white;
-}
-.cari{
-  top: 5px;
 }
 .gambarpesananwarna{
-  top: 10px;
+  top: 200px;
   background-color: white;
-}
-
-.gambarpesananwarna{
   margin-top: 20px;
   height: 300px;
   padding-top: 180px;
 }
-.hurufbelumadapesanan{
-  font-family: Arial;
-  font-size: 16px;
-  word-spacing: 0px;
+@media only screen and (max-width: 560px){
+  .header h1{
+    font-size: 150%;
+  }
+  .badan h2{
+    visibility: hidden;
+  }
+  .badan h3{
+    visibility: hidden;
+  }
+  .content{
+    margin-left: 40px;
+    margin-top: 5px;
+  }
+  .profiltasta{
+    margin-left: 20px;
+  }
 }
