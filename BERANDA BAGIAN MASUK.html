@@ -1,54 +1,111 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
 <head>
+  <meta charset="UTF-8">
   <title>Home</title>
-  <link rel="icon" href="huruf%20d.ico"/>
-  <link rel="stylesheet" href="BERANDA%20BAGIAN%20MASUK.css">
+  <link rel="stylesheet" type="text/css" href="BERANDA%20BAGIAN%20MASUK.css">
+  <link rel="icon" href="Image/huruf%20d.ico"/>
+  <style type="text/css">
+    *{
+      box-sizing: border-box;
+    }
+    .gallery{
+      border: 1px solid #ccc;
+    }
+    .gallery img{
+      width: 100%;
+      height: auto;
+    }
+    .responsive{
+      padding: 0 6px;
+      float: left;
+      width: 25%;
+    }
+    @media only screen and (max-width: 700px){
+      .responsive{
+        width: 50%;
+        margin: 6px 0;
+      }
+    }
+    @media only screen and (max-width: 500px){
+      .responsive{
+        width: 100%;
+      }
+    }
+  </style>
 </head>
+
 <body>
 <div class="header">
   <table>
     <tr>
-      <td><h1><a href="BERANDA%20BAGIAN%20MASUK.html" style="text-decoration: none; color: white">DAYYUFI</h1></td>
+      <td><div class="menudropdown">
+        <ul>
+          <li class="dropdown"><a href="#"><img src="Image/menu.png"></a>
+            <ul class="isidropdown">
+              <li><a href="http://localhost:63342/ALL%20FIX/Tampilan%20Profil.html?_ijt=beq3f9btjoh4g2rqcp1ju8m6md">Akun Saya</a><hr></li>
+              <li><a href="http://localhost:63342/ALL%20FIX/Pesanan%20Saya.html?_ijt=beq3f9btjoh4g2rqcp1ju8m6md">Pesanan Saya</a><hr></li>
+              <li><a href="http://localhost:63342/ALL%20FIX/Notifikasi.html?_ijt=beq3f9btjoh4g2rqcp1ju8m6md">Notifikasi</a><hr></li>
+              <li><a href="http://localhost:63342/ALL%20FIX/Create%20New%20Post.html?_ijt=beq3f9btjoh4g2rqcp1ju8m6md">Create New Item</a><hr></li>
+              <li><a href="http://localhost:63342/ALL%20FIX/POSTINGAN.html?_ijt=beq3f9btjoh4g2rqcp1ju8m6md">Postingan</a><hr></li>
+              <li><a href="http://localhost:63342/ALL%20FIX/MASUK.html?_ijt=beq3f9btjoh4g2rqcp1ju8m6md">Keluar</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div></td>
+      <td><h1><a href="BERANDA%20BAGIAN%20MASUK.html" style="text-decoration: none; color: white">DAYYUFI</a></h1></td>
       <td>
         <form>
-          <input type="text" name="search" placeholder="Cari" style="width: 100%;margin-left: 10%;">
+          <input type="text" name="search" placeholder="Cari">
         </form>
-      <td>
+      </td>
     </tr>
   </table>
-  <h2 style="position:relative; width:20px; height: 20px; margin-left: 85%;"><a href="Notifikasi.html" style="text-decoration: none; color: white">Notifikasi</a></h2>
-  <img src="orang.png" style="position:relative; width: 40px; height: 40px;  margin-left:91%;bottom: 70px;"/>
-  <h2 style="position:relative; margin-left: 90%; margin-top: -15px;bottom: 50px;"><a href="Tampilan%20Profil.html" style="text-decoration: none;color: white">Hai, Tasta!</a></h2>
+
+
+
+  <h2 style="margin-left: 83%; margin-top: -4%"><a href="http://localhost:63342/ALL%20FIX/Tampilan%20Profil.html?_ijt=beq3f9btjoh4g2rqcp1ju8m6md" style="text-decoration: none; color: white">Hai, Tasta!</a></h2>
 </div>
 <fieldset>
-<body>
-<br>
-<table>
-  <tr>
-   <td><img src="dress.jpg" style="width:100%;height:250px;"></td>
-   <td><img src="dompet.jpg" style="width:100%;height:250px;"></td>
-   <td><img src="sepatu3.jpg" style="width:100%;height:250px;"></td>
-  </tr>
-</table>
-  <table>
-    <tr>
-      <td><h3>Kategori</h3></td>
-    </tr>
-  </table>
-  <table>
-    <tr>
-      <td><img src="jaket.jpg" style="width:100%;height:200px;"><h4 align="center">Pakaian Pria</h4></td>
-      <td><img src="baju.jpg" style="width:100%;height:200px;"><h4 align="center">Fashion Muslim</h4></td>
-      <td><img src="tas.jpg" style="width:100%;height:200px;"><h4 align="center">Tas Wanita</h4></td>
-      <td><img src="sepatu%20pria.jpg" style="width:100%;height:200px;"><h4 align="center">Sepatu Pria</h4></td>
-      <td><img src="sepatu%20wanita.jpg" style="width:100%;height:200px;"><h4 align="center">Sepatu Wanita</h4></td>
-      <td><button>&#8921;</button></td>
-
-    </tr>
-  </table>
+  <div id="slider">
+    <figure>
+      <img src="Image/dress.jpg" style="width:20%; height: 300px;">
+      <img src="Image/dompet.jpg" style="width:20%; height: 300px;">
+      <img src="Image/sepatu3.jpg" style="width:20%; height: 300px;">
+    </figure>
   </div>
-  </body>
-</fieldset><br><br><br>
+</fieldset><br>
+
+<fieldset>
+  <div class="gambaryangbawah">
+    <div class="responsive">
+      <div class="gallery">
+        <a href="#"><img src="Image/jaket.jpg" style="width: 300px; height: 200px"></a>
+        <p style="text-align: center;">Pakaian Pria</p>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a href="#"><img src="Image/baju.jpg" style="width: 300px; height: 200px"></a>
+        <p style="text-align: center;">Fashion Muslim</p>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a href="#"><img src="Image/tas.jpg" style="width: 300px; height: 200px"></a>
+        <p style="text-align: center;">Tas Wanita</p>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a href="http://localhost:63342/ALL%20FIX/DETAIL%20ITEM%20DRESS.html?_ijt=beq3f9btjoh4g2rqcp1ju8m6md"><img src="Image/sepatu%20pria.jpg" style="width: 300px; height: 200px"></a>
+        <p style="text-align: center;">Sepatu Pria</p>
+      </div>
+    </div>
+  </div>
+</fieldset>
 </body>
 </html>
