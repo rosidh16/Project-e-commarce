@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Masuk</title>
+    <link rel="stylesheet" type="text/css" href="NETA.css">
+    <link rel="icon" href="huruf%20d.ico"/>
+</head>
+
+<body>
+
+<div class="header">
+    <table>
+        <tr>
+            <td><h1><a href="HOME.html" style="text-decoration: none; color: white">DAYYUFI</a></h1></td>
+            <td>
+                <form>
+                    <input type="text" name="search" placeholder="Cari">
+                </form>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div class="kotakmasuk">
+    <p class="tulisanmasuk">Silahkan Daftar</p>
+    <form>
+        <label>Email</label>
+        <input type="email" name="email" class="formmasuk" placeholder="Email">
+
+        <script>
+            function show() {
+                var showpw = document.getElementById('showpw');
+
+                if (showpw.type === "text")
+                    showpw.type = "password";
+                else
+                    pw.type = "text";
+            }
+        </script>
+
+        <label>Kata Sandi</label>
+        <input type="password" name="txtPassword" id="showpw" class="formmasuk" placeholder="Kata sandi"><button onclick="show();">Show Password</button>
+        <input type="submit" class="tombolmasuk" value="MASUK">
+    </form>
+</div>
+</body>
+</html>
