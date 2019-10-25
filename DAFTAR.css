@@ -1,99 +1,77 @@
-*{
-  margin: 0;
-}
 body{
-  background-color: lightgrey;
+  font-family: Arial;
+  background: lightgray;
 }
-.daftarbody{
+input[type=text]{
+  width: 100%;
+  height: 30%;
+  box-sizing: border-box;
+  border: 2px solid #cccccc;
+  border-radius: 2%;
+  font-size: 100%;
   background-color: white;
-  padding-right: 250px;
+  background-position: 3% 3%;
+  background-repeat: no-repeat;
+  padding: 2% 10% 1% 1%;
+  background-image: url('loop.png');
+  background-position-x: right;
 }
-
-*{margin: 0; padding:0}
-@keyframes autopopup{
-  from {opacity: 0; margin-top:400px;}
-  to {opacity; 0;}
+input[type=text]:focus{
+  width: 100%;
 }
-#close{
-  background-color: 0;
-  position: fixed;
-  padding-left: 400px;
-  right: 500px;
-  bottom: 100px;
-  animation: autopopup 3s;
-}
-#close:target{
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  transition: all 1s;
-  opacity: 0;
-  visibility: hidden;
-}
-@media (min-width: 768px){
-  .container-popup{
-    width: 100%;
-    margin-left: 50px;
-  }
-}
-
-.container-popup form{
-  width: 100%
-  align: center;
-}
-.close{
-  position: absolute;
-  top: 2px;
-  right: -48px;
-  background-color: #213366;
-  padding: 1px 5px;
-  font-size: 15px;
-  text-decoration: none;
-  line-height: 1;
-  color: white;
-}
-
-.header{
+.header {
+  width: 100%;
   height: 87px;
   background-color: #213366;
   color: beige;
 }
-.header h1{
-  padding-top: 23px;
-  margin-left: 45px;
-  text-align: justify;
-  font-size: 35px;
-  color: beige;
-  font-family: "Bodoni Bd BT";
-}
-.header h2{
-  margin-top: -30px;
-  margin-left: 1200px;
-  text-align: justify;
-  font-size: 13px;
-  color: beige;
-  font-family: Arial;
-}
-.header h3{
-  margin-top: -10px;
-  margin-left: 1270px;
-  text-align: justify;
-  font-size: 13px;
-  color: beige;
-  font-family: Arial;
-}
-.container-popup h4{
-  text-align: justify;
-  font-family: "Bodoni Bd BT";
-  font-size: 20px;
-}
-.gambarorang{
-  margin-left: 1280px;
-  margin-top: -60px;
-}
-.header input[type=text]{
+.header input[type=text] {
   float: left;
-  margin-left: 120px;
-  margin-bottom: -15px;
-  width: 800px;
-  height: 27px;
+  margin-left: 30%;
+  margin-top: -6% ;
+  margin-bottom: -15%;
+  width: 100%;
+  height: 27%;
+}
+.header h1 {
+  padding-top: -2%;
+  margin-left: 13%;
+  text-align: justify;
+  font-size: 200%;
+  color: beige;
+  font-family: "Bodoni Bd BT";
+}
+.tulisandaftar{
+  text-align: center;
+  text-transform: uppercase;
+}
+.kotakdaftar{
+  width: 30%;
+  background: white;
+  margin: 80px auto;
+  padding: 30px 20px;
+}
+label{
+  font-size: 11pt;
+}
+.formdaftar{
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  font-size: 11pt;
+  margin-bottom: 20px;
+}
+.tomboldaftar{
+  background: #46de4b;
+  color: white;
+  font-size: 11pt;
+  width: 100%;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+}
+.link{
+  color: #232323;
+  text-decoration: none;
+  font-size: 10pt;
 }
