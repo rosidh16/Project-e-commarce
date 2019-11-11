@@ -75,3 +75,11 @@ label{
   text-decoration: none;
   font-size: 10pt;
 }
+.btn{
+  padding: 7px;
+  width: 100%;
+  background: #46de4b;
+}
+.val_error{
+  color: #FF1F1F
+}
