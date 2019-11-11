@@ -61,17 +61,16 @@ label{
   font-size: 11pt;
   margin-bottom: 20px;
 }
-.tomboldaftar{
-  background: #46de4b;
-  color: white;
-  font-size: 11pt;
-  width: 100%;
-  border: none;
-  border-radius: 3px;
-  padding: 10px 20px;
-}
 .link{
   color: #232323;
   text-decoration: none;
   font-size: 10pt;
+}
+.btn{
+  padding: 7px;
+  width: 100%;
+  background: #46de4b;
+}
+.val_error{
+  color: #FF1F1F
 }
