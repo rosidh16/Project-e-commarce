@@ -3,7 +3,7 @@
 <head>
   <title>Masuk</title>
   <link rel="stylesheet" type="text/css" href="MASUK.css">
-  <link rel="icon" href="Image/huruf%20d.ico"/>
+  <link rel="icon" href="huruf%20d.ico"/>
 </head>
 
 <body>
@@ -11,7 +11,7 @@
 <div class="header">
   <table>
     <tr>
-      <td><h1><a href="index.html" style="text-decoration: none; color: white">DAYYUFI</a></h1></td>
+      <td><h1><a href="http://localhost:63342/ALL%20FIX/BERANDA/HOME.html?_ijt=bagnpcv878i6b90lnp007r4r2k" style="text-decoration: none; color: white">DAYYUFI</a></h1></td>
       <td>
         <form>
           <input type="text" name="search" placeholder="Cari">
@@ -23,14 +23,63 @@
 
 <div class="kotakmasuk">
   <p class="tulisanmasuk">Silahkan Masuk</p>
-  <form action="BERANDA%20BAGIAN%20MASUK.html">
-    <label>Email</label>
-    <input type="email" name="email" class="formmasuk" placeholder="Email">
-
-    <label>Kata Sandi</label>
-    <input type="password" name="txtPassword" class="formmasuk" placeholder="Kata sandi">
-    <input type="submit" class="tombolmasuk" value="MASUK">
+  <form method="POST" action="http://localhost:63342/ALL%20FIX/BERANDA%20BAGIAN%20MASUK/BERANDA%20BAGIAN%20MASUK.html?_ijt=bagnpcv878i6b90lnp007r4r2k" onsubmit="return Validate()" name="vform">
+    <div>
+        <label>Email</label><br>
+        <input type="email" name="email" class="textInput" placeholder="Email" style="width: 99%">
+        <div id="email_error" class="val_error"></div>
+    </div><br>
+    <div>
+        <label>Password</label><br>
+        <input type="password" name="password" class="textInput" placeholder="Password" style="width: 99%">  
+    </div><br>
+    <div>
+        <input type="submit" value="MASUK" class="btn" name="masuk">
+    </div>
   </form>
 </div>
 </body>
 </html>
+
+<script type="text/javascript">
+	var email = document.forms["vform"]["email"];
+	var password = document.forms["vform"]["password"];
+
+	var email_error = document.getElementById("email_error");
+	var password_error = document.getElementById("password_error");
+
+	email.addEventListener("blur", emailVerify, true);
+	password.addEventListener("blur", passwordVerify, true);
+
+	function Validate() {
+		if (email.value == ""){
+			email.style.border = "1px solid red";
+			email_error.textContent = "email is required";
+			email.focus();
+			return false;
+		}
+
+		if (password.value == "") {
+			password.style.border = "1px solid red";
+			password_error.textContent = "Password is required";
+			password.focus();
+			return false;
+		}
+	}
+
+function emailVerify() {
+	if (email.value !="") {
+		email.style.border = "1px solid #5E6E66";
+		email_error.innerHTML = "";
+		return true;
+	}
+}
+function passwordVerify() {
+	if (password.value !="") {
+		password.style.border = "1px solid #5E6E66";
+		password_error.innerHTML = "";
+		return true;
+	}
+}
+
+</script>
