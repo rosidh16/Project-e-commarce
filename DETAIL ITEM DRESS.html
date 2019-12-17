@@ -14,28 +14,28 @@
         <ul>
           <li class="dropdown"><a href="#"><img src="menu.png"></a>
             <ul class="isidropdown">
-              <li><a href="http://localhost:63342/ALL%20FIX/PROFIL/Tampilan%20Profil.html?_ijt=3q0a2aln2slnqf7n1208t1hfvb">Akun Saya</a><hr></li>
-              <li><a href="http://localhost:63342/ALL%20FIX/PESANAN%20SAYA/Pesanan%20Saya.html?_ijt=3q0a2aln2slnqf7n1208t1hfvb">Pesanan Saya</a><hr></li>
-              <li><a href="http://localhost:63342/ALL%20FIX/NOTIFIKASI/Notifikasi.html?_ijt=3q0a2aln2slnqf7n1208t1hfvb">Notifikasi</a><hr></li>
-              <li><a href="http://localhost:63342/ALL%20FIX/CREATE%20NEW%20ITEM/Create%20New%20Post.html?_ijt=3q0a2aln2slnqf7n1208t1hfvb">Create New Item</a><hr></li>
-              <li><a href="http://localhost:63342/ALL%20FIX/POSTINGAN/POSTINGAN.html?_ijt=3q0a2aln2slnqf7n1208t1hfvb">Postingan</a><hr></li>
-              <li><a href="http://localhost:63342/ALL%20FIX/MASUK/MASUK.html?_ijt=3q0a2aln2slnqf7n1208t1hfvb">Keluar</a></li>
+              <li><a href="Tampilan%20Profil.html">Akun Saya</a><hr></li>
+              <li><a href="Pesanan%20Saya.html">Pesanan Saya</a><hr></li>
+              <li><a href="Notifikasi.html">Notifikasi</a><hr></li>
+              <li><a href="Create%20New%20Post.html">Create New Item</a><hr></li>
+              <li><a href="Postingan.html">Postingan</a><hr></li>
+              <li><a href="MASUK.html">Keluar</a></li>
             </ul>
           </li>
         </ul>
       </div></td>
-      <td><h1><a href="http://localhost:63342/ALL%20FIX/BERANDA%20BAGIAN%20MASUK/BERANDA%20BAGIAN%20MASUK.html?_ijt=c8a70gknsjgda6b6d8cnhvc028" style="text-decoration: none; color: white">DAYYUFI</a></h1></td>
+      <td><h1><a href="BERANDA%20BAGIAN%20MASUK.html" style="text-decoration: none; color: white">DAYYUFI</a></h1></td>
     </tr>
   </table>
 </div>
 
 <div class="badan">
   <div class="profiltasta">
-    <h2><a href="http://localhost:63342/ALL%20FIX/PROFIL/Tampilan%20Profil.html?_ijt=bagnpcv878i6b90lnp007r4r2k" style="text-decoration: none; color: black">Tasta</a></h2>
+    <h2><a href="Tampilan%20Profil.html" style="text-decoration: none; color: black">Tasta</a></h2>
     <div class="gambarorang2"/>
     <td><img src="orangabubanget.png" style="width: 20%; height: 20%"/></td>
   </div>
-  <h3><a href="http://localhost:63342/ALL%20FIX/PROFIL/Tampilan%20Profil.html?_ijt=bagnpcv878i6b90lnp007r4r2k" style="text-decoration: none; color: black">Ubah Profil</a></h3>
+  <h3><a href="Tampilan%20Profil.html" style="text-decoration: none; color: black">Ubah Profil</a></h3>
   <div class="gambarubahprofil"/>
   <img src="pensil%20abu.png" style="width: 10%; height: 10%"/>
 </div>
@@ -73,7 +73,7 @@
     $.getJSON('detail.json',function(data){
       console.log(data);
       $.each(data,function(i, detail){
-        $("ul#daftardetail").append("<li>"+detail.harga+"</li>");
+        $("ul#daftardetail").append("<li>"+detail.harga+"</li>").append("<li>"+detail.ukuran+"</li>").append("<li>"+detail.warna+"</li>");
         })
     })
   }
