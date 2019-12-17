@@ -82,7 +82,7 @@ li.dropdown {
   display: block;
 }
 isidropdown a:hover{
-  color: #fff !important;
+  color: blue !important;
 }
 .isidropdown{
   position: absolute;
@@ -95,7 +95,7 @@ isidropdown a:hover{
   color: #3c3c3c !important;
 }
 .isidropdown a:hover{
-  color: #232323; !important;
+  color: blue !important;
 }
 
 .header {
