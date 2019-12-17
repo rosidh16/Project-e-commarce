@@ -1,10 +1,7 @@
 [
     {
-        "harga":"Rp 150.000",
-        "ukuran":"42"
-    },
-    {
         "harga":"Rp 160.000",
-        "ukuran":"40"
+        "ukuran":"40",
+        "warna": "Navy",
     }
 ]
