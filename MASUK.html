@@ -1,49 +1,61 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>Masuk</title>
-  <link rel="stylesheet" type="text/css" href="MASUK.css">
-  <link rel="icon" href="huruf%20d.ico"/>
+	<title>Masuk</title>
+	<link rel="stylesheet" type="text/css" href="MASUK.css">
+	<link rel type="text/javascript" language="javascript" href="MASUK.js">
+	</script>
+	<link rel="icon" href="huruf%20d.ico" />
 </head>
 
 <body>
 
-<div class="header">
-  <table>
-    <tr>
-      <td><h1><a href="http://localhost:63342/ALL%20FIX/BERANDA/HOME.html?_ijt=bagnpcv878i6b90lnp007r4r2k" style="text-decoration: none; color: white">DAYYUFI</a></h1></td>
-      <td>
-        <form>
-          <input type="text" name="search" placeholder="Cari">
-        </form>
-      </td>
-    </tr>
-  </table>
-</div>
-
-<div class="kotakmasuk">
-  <p class="tulisanmasuk">Silahkan Masuk</p>
-  <form method="POST" action="http://localhost:63342/ALL%20FIX/BERANDA%20BAGIAN%20MASUK/BERANDA%20BAGIAN%20MASUK.html?_ijt=bagnpcv878i6b90lnp007r4r2k" onsubmit="return Validate()" name="vform">
-    <div>
-        <label>Email</label><br>
-        <input type="email" name="email" class="textInput" placeholder="Email" style="width: 99%">
-        <div id="email_error" class="val_error"></div>
-    </div><br>
-    <div>
-        <label>Password</label><br>
-        <input type="password" name="password" class="textInput" placeholder="Password" style="width: 99%">  
-    </div><br>
-    <div>
-        <input type="submit" value="MASUK" class="btn" name="masuk">
-    </div>
-  </form>
-</div>
+	<div class="header">
+		<table>
+			<tr>
+				<td>
+					<h1><a href="http://localhost:63342/ALL%20FIX/BERANDA%20BAGIAN%20MASUK/BERANDA%20BAGIAN%20MASUK.html?_ijt=neqr6f6rdnft599ijjk9747lgv"
+							style="text-decoration: none; color: white">DAYYUFI</a></h1>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div class="tengah">
+		<span class="title1" style="margin-left: 37%; font-size: 500%;">DAYYUFI</span>
+		<form method="POST" action=""
+			onsubmit="return Validate()" name="vform">
+	</div>
+	<div class="tengah2">
+		<span class="title2" style="margin-left: 43%;font-size: 150%;">Happy Shopping</span>
+	</div>
+	<div class="tengah3">
+		<button class="register" style="margin-left: 45%; margin-top: 15%;">
+			<a href="#modal_MASUK" class="registerLink" style="text-decoration: none;">REGISTER NOW</a>
+		</button>
+	</div>
+	<div class="modal_container" id="modal_MASUK">
+		<div class="modal">
+			<a href="#" class="close">x</a>
+			<span class="modal_heading">
+				ENTER YOUR DETAILS
+			</span>
+			<form>
+				<input type="text" class="textInput" placeholder="Email"><br>
+				<div id="email_error" class="val_error"></div>
+				<input type="password" class="textInput" placeholder="Password"><br>
+				<div id="password_error" class="val_error"></div>
+				<a href="BERANDA%20BAGIAN%20MASUK.html"><input type="button" class="btnRegister" value="MASUK"></a>
+			</form>
+		</div>
+	</div>
 </body>
-</html>
 
+</html>
 <script type="text/javascript">
 	var email = document.forms["vform"]["email"];
 	var password = document.forms["vform"]["password"];
+	var password_confirmation = document.forms["vform"]["password_confirmation"];
 
 	var email_error = document.getElementById("email_error");
 	var password_error = document.getElementById("password_error");
@@ -63,6 +75,13 @@
 			password.style.border = "1px solid red";
 			password_error.textContent = "Password is required";
 			password.focus();
+			return false;
+		}
+
+		if (password.value != password_confirmation.value) {
+			password.style.border = "1px solid red";
+			password_confirmation.style.border = "1px solid red";
+			password_error.innerHTML = "The two passwords do not match";
 			return false;
 		}
 	}
