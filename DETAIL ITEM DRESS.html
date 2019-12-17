@@ -73,7 +73,9 @@
     $.getJSON('detail.json',function(data){
       console.log(data);
       $.each(data,function(i, detail){
-        $("ul#daftardetail").append("<li>"+detail.harga+detail.ukuran+detail.warna+"</li>");
+        $("ul#daftardetail").append("<li>"+detail.harga+"</li>");
+        $("ul#daftardetail").append("<li>"+detail.ukuran+"</li>");
+        $("ul#daftardetail").append("<li>"+detail.warna+"</li>");
         })
     })
   }
