@@ -44,30 +44,42 @@
 <div class="content" style="margin-top: -70px">
   <div class="gambarpesananwarna">
     <p style="text-align: left; margin-left: 50px; margin-top: -150px">Detail Item Sepatu Pria</p><br>
-    <img src="sepatu%20pria.jpg" style="width: 40%; height: 250px">
+    <img src="sepatu%20pria.jpg" style="width: 40%; height: 250px"><br>
+
+<button id="button">Detail Barang</button>
+
 <div class="bagianajax">
-  <button onclick="loadContent()">Detail Barang</button>
-  <div id="hasil"></div>
+  <div id="bagianajax2"></div>
+  <ul id="daftardetail"></ul>
+</div>
 
-  <script>
-    function loadContent(){
-      var url = "https://jsonplaceholder.typicode.com/posts/";
-      fetch(url).then(response => )response.json())
-        .then(function(data){
-          var template = data.map(post => {
-            return
-            <h3>${aaaaaaaaaaaaaaaaaaaaa}</h3>
-            <p>${kkkkkkkkkkkkkkkkkkkkkkkkkk}</p>
-            <hr>
-            ;
-          });
+<script src="JS.js"></script>
+<script>
+  $(document).ready(function(){
+    console.log('doc ready');
+   $("#button").on('click', function(){detail()})
+  })
+  function detail(){
+    console.log('detail');
+    // $.ajax({
+    //   url: 'detail.json',
+    //   success: function(resp){
+    //     console.log(resp)
+    //   },
+    //   error:function(a,b,c){
+    //     console.log('error',a,b,c)
+    //   }
+    // })
+    $.getJSON('detail.json',function(data){
+      console.log(data);
+      $.each(data,function(i, detail){
+        $("ul#daftardetail").append("<li>"+detail.harga+"</li>");
+        })
+    })
+  }
+</script>
 
-          document.getElementById("hasil").innerHTML = template.join('<br>');
-        }).catch(function(e){
-          alert("gagal mengambil data");
-        });
-    }
-  </script>
+
     <p style="text-align: center; margin-top: 2px"><a href="#" style="text-decoration: none">Pesan Sekarang</a></p>
   </div>
 </div>
